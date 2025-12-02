@@ -1,0 +1,51 @@
+.cat-breed {
+    flex: 1 1 300px; /* Allow the card to shrink or grow width with 300px default width */
+    margin: 1em; /* Add margin between cards */
+    padding: 1em; /* Add padding around each card */
+    border: 1px solid #ddd; /* Add a thin border around each card */
+    border-radius: 8px; /* Create a rounded radius on corners of each card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Project a shadow around each card */ 
+    text-align: center; /* Centralize horizontal alignment of the text */
+    transition: transform 0.3s; /* Transform the card 0.3s */
+}
+
+.cat-container {
+    display: flex; /* Initialize flexbox layout */
+    flex-wrap: wrap; /* Allow items in the container to wrap on smaller biewports */
+    justify-content: space-around;/* Distribute items with equal space around them */
+    padding: 2em; /* Add padding around the container */
+}
+
+.cat-breed:hover {
+    transform: scale(1.05); /* Increase the size of the card 1.05 times on hover */
+}
+
+.cat-breed img {
+    max-width: 100%; /* Set the maximum width of image on viewport change*/
+    height: auto; /* Auto-adjust height of the image */
+    border-radius: 8px; /* Create a rounded radius on corners of each image*/
+}
+
+.cat-breed h3 {
+    margin: 0.5em 0;/* Set the vertical and horizontal margins of each heading */
+}
+
+.cat-breed p {
+    margin: 0.5em 0 1em; /* Set the vertical and horizontal margins of each paragraph*/
+}
+
+@media (max-width: 768px) {
+
+    /* CSS rules for screens 768px or narrower */
+
+    .cat-container{
+        flex-direction: column; /* Arrange flex items vertically */
+        align-items: center; /* Centralize flex items along vertical axis*/
+    }
+
+    .cat-breed{
+        flex: 1 1 100%; /* Allow the card to shrink or grow width with 300px default width */
+        max-width: 100%; /* Set the maximum width of image on viewport change */
+    }
+
+}
