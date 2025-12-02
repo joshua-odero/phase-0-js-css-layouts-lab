@@ -1,17 +1,17 @@
 .cat-breed {
-    flex: 1 1 300px; /* Allow the card to shrink or grow width with 300px default width */
+    flex: 1 1 300px; /* Allow the card to shrink or grow width with 300px as default width */
     margin: 1em; /* Add margin between cards */
     padding: 1em; /* Add padding around each card */
     border: 1px solid #ddd; /* Add a thin border around each card */
     border-radius: 8px; /* Create a rounded radius on corners of each card */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Project a shadow around each card */ 
     text-align: center; /* Centralize horizontal alignment of the text */
-    transition: transform 0.3s; /* Transform the card 0.3s */
+    transition: transform 0.3s; /* Transform the card in 0.3s */
 }
 
 .cat-container {
     display: flex; /* Initialize flexbox layout */
-    flex-wrap: wrap; /* Allow items in the container to wrap on smaller biewports */
+    flex-wrap: wrap; /* Allow items in the container to wrap on smaller viewports */
     justify-content: space-around;/* Distribute items with equal space around them */
     padding: 2em; /* Add padding around the container */
 }
@@ -44,7 +44,7 @@
     }
 
     .cat-breed{
-        flex: 1 1 100%; /* Allow the card to shrink or grow width with 300px default width */
+        flex: 1 1 100%; /* Allow the card to shrink or grow width with 100% as default width */
         max-width: 100%; /* Set the maximum width of image on viewport change */
     }
 
